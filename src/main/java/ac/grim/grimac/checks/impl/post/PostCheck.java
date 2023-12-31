@@ -24,7 +24,7 @@ import java.util.Locale;
 
 import static com.github.retrooper.packetevents.protocol.packettype.PacketType.Play.Client.*;
 
-@CheckData(name = "Post")
+@CheckData(name = "KillAura")
 public class PostCheck extends Check implements PacketCheck, PostPredictionCheck {
     private final ArrayDeque<PacketTypeCommon> post = new ArrayDeque<>();
     // Due to 1.9+ missing the idle packet, we must queue flags
